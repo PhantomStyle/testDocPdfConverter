@@ -1,0 +1,26 @@
+group 'test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'fr.opensagres.xdocreport', name: 'xdocreport', version: '1.0.4'
+// https://mvnrepository.com/artifact/org.odftoolkit/odfdom-java
+    compile group: 'org.odftoolkit', name: 'odfdom-java', version: '0.8.6'
+// https://mvnrepository.com/artifact/org.apache.poi/poi
+    compile group: 'org.apache.poi', name: 'poi', version: '3.9'
+// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
+// https://mvnrepository.com/artifact/com.lowagie/itext
+    compile group: 'com.lowagie', name: 'itext', version: '2.1.7'
+// https://mvnrepository.com/artifact/org.apache.poi/ooxml-schemas
+    compile group: 'org.apache.poi', name: 'ooxml-schemas', version: '1.1'
+
+}
